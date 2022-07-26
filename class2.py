@@ -6,7 +6,9 @@ class Person:
     num_person = 0
     #초기화 매서드
     def __init__(self):
+        #소속이 인스턴스 멤버 변수
         self.name = "default name"
+        #소속이 클래스 멤버 변수
         Person.num_person += 1
     #인스턴스 매서드
     def print(self):
