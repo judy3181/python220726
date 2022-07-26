@@ -19,7 +19,7 @@ print("---스코핑룰---")
 #전역변수
 x = 1
 def func(a):
-    return a+X
+    return a + x
 
 #호출
 print(func(1))
@@ -27,7 +27,7 @@ print(func(1))
 #지역변수
 def func2(a):
     x = 5
-    return a+X
+    return a + x
 
 #호출
 print(func2(1))
@@ -44,3 +44,13 @@ def change(x):
 change(wordlist)
 print("함수 호출후:",wordlist)
 
+#불변형식의 전역변수는 원래 읽기만 가능
+g = 1 
+def testGlobal(a):
+    #불변형식을 함수 내부에서 읽기+쓰기
+    global g 
+    g = 2
+    return a+g
+#함수 호출
+print(testGlobal)
+print("전역변수 g:", g)
