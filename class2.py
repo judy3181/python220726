@@ -23,3 +23,13 @@ p1.name = '전우치'
 p1.print()
 p2.print()
 print("인스턴스 개수:{0}".format(Person.num_person))
+
+# 동적으로 변수를 추가
+Person.title = "new title"
+print(p1.title)
+print(p2.title)
+print(Person.title)
+# 인스턴스에 추가
+p1.age = 30
+print(p1.age)
+# print(p2.age)
