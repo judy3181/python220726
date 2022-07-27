@@ -11,6 +11,7 @@ except ZeroDivisionError:
     print("0으로 나누면 안됩니다.")
 except TypeError:
     print("숫자여야 합니다.")
+#else와 finally는 옵션임
 else:
     print("결과:{0}".format(result))
 
